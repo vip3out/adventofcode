@@ -1,6 +1,8 @@
 # Adventofcode
 
-Adventofcode Solutions
+Adventofcode Solutions from [Adventofcode Puzzles](https://adventofcode.com/) by Eric Wastle:
+- [Website](http://was.tl/)
+- [Github](https://github.com/topaz)
 
 ## Introductions
 

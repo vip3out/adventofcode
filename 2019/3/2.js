@@ -14,11 +14,11 @@ const programm = () => {
           const line1 = new Line(linePathInstructions[0], start)
           const line2 = new Line(linePathInstructions[1], start)
 
-          const intersections = line1.intersections(line2).sort((a, b) => {
-            return start.between(a) - start.between(b)
+          const intersectionSteps = line1.intersectionSteps(line2).sort((a, b) => {
+            return a - b
           })
 
-          return resolver(start.between(intersections[0]))
+          return resolver(intersectionSteps[0])
         })
         .catch(error => {
           throw error;
