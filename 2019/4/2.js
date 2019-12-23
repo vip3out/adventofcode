@@ -16,18 +16,11 @@ const check = (passphrase) => {
     }
   }
 
-  doubles =  doubles.filter(d => d && d)
+  doubles =  doubles.filter(d => d && d === 2)
+  console.log(passphrase, doubles)
   if(doubles.length === 0) {
     return false
   }
-
-  for(let z=0;z<doubles.length;z++) {
-    if(doubles[z] % 2 !== 0) {
-      return false
-    }
-  }
-
-  console.log(passphrase, doubles)
 
   return true
 }
