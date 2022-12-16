@@ -37,5 +37,9 @@ const readInputFileToArray = (path, by, to) => {
   })
 }
 
+const input_logger = input => console.log(`\n`.bgGray + `\n\n` + `INPUT: \n\n${input}`.dim + `\n` + `\n`.bgGray + `\n`);
+const debug = (args) => console.log(...args) 
 module.exports.readInputFile = readInputFile
 module.exports.readInputFileToArray = readInputFileToArray
+module.exports.input_logger = input_logger
+module.exports.debug = debug
